@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/book.css">
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html"><h4>HOME</h4></a></li>
+        <li><a href="branch.html"><h4>BRANCHES</h4></a></li>
+        <li><a href="restaurant.html"><h4>RESTAURANTS</h4></a></li>
+        <li><a href="adven.html"><h4>ADVENTURES</h4></a></li>
+        <li><a href="book.html"><h4>BOOKING</h4></a></li>
+        <li><a href="contact.html"><h4>CONTACT US</h4></a></li>
+        <li><a href="sign.html"><h4>👤 SIGN IN</h4></a></li>
+      </ul><br>
+    <div class="container">
+        <h1>Hotel Booking</h1>
+        <form action="submit.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="check-in">Check-in Date:</label>
+            <input type="date" id="check-in" name="check-in" required>
+
+            <label for="check-out">Check-out Date:</label>
+            <input type="date" id="check-out" name="check-out" required>
+
+            <label for="adults">Number of Adults:</label>
+            <input type="number" id="adults" name="adults" min="1" required>
+
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children" min="0" required>
+
+
+            <label for="room-type">Room Type:</label>
+            <select id="room-type" name="room-type" required>
+                <option value="single">Deluxe Room</option>
+                <option value="double">Deluxe family Room</option>
+                <option value="suite">Grand luxury suite</option>
+            </select>
+
+            <label for="option">Select dining option:</label>
+            <select id="option" name="option" >
+                <option value="ala-carte">Ala Carte</option>
+                <option value="buffet">Buffet</option>
+            </select>
+            <label for="adventures">Select an adventure:</label>
+            <select id="adventures" name="adventures">
+            <option value="no">None</option>
+            <option value="surfing">Surfing</option>
+            <option value="hiking">Horton plains hiking</option>
+            <option value="boating">Boat ride</option>
+            </select>
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
